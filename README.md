@@ -57,7 +57,7 @@ Instead of throwing unhedged capital at energy-efficient properties, we engineer
 You can instantly run our forensic terminal application to audit real estate assets:
 ```bash
 # Clone the repository
-git clone [https://github.com/yourusername/decarbonization-heist.git](https://github.com/yourusername/decarbonization-heist.git)
+git clone [https://github.com/ahmedadelamin/decarbonization-heist.git](https://github.com/ahmedadelamin/decarbonization-heist.git)
 cd decarbonization-heist
 
 # Install requirements
