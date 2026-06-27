@@ -117,7 +117,7 @@ $$
 
 ---
 
-## 🛠️ The 4-Phase Decarbonization Pipeline
+## 🛠️ The 5-Scenario Decarbonization Pipeline
 
 Our capital deployment follows a strict **self-funding pipeline** where rapid-payback early interventions generate the necessary liquid reserves to fund deep, structural infrastructure retrofits:
 
