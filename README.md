@@ -1,4 +1,4 @@
-"""# 🕵️‍♂️ The $2.8 Billion Heist: Data-Driven Decarbonization Counter-Intelligence
+# 🕵️‍♂️ The $2.8 Billion Heist: Data-Driven Decarbonization Counter-Intelligence
 
 Under New York City's Local Law 97 (LL97), our massive 2.06 Billion Sq. Ft. real estate portfolio was exposed to an astronomical projected penalty of **$2.88 Billion annually** due to carbon emission intensities.
 
