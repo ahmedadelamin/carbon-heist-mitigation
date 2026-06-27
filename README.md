@@ -1,39 +1,40 @@
 <div align="center">
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0D1117,50:161B22,100:0D1117&height=200&section=header&text=THE%20%242.8B%20HEIST&fontSize=60&fontColor=00FF66&fontAlignY=38&desc=Data-Driven%20Decarbonization%20Counter-Intelligence&descAlignY=60&descSize=18&descColor=8B949E" width="100%"/>
 <br/>
-[![Python](https://img.shields.io/badge/Python-3.9%2B-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
-[![Scikit-Learn](https://img.shields.io/badge/ML-Scikit--Learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)](https://scikit-learn.org)
-[![D3.js](https://img.shields.io/badge/Viz-D3.js-F9A03F?style=for-the-badge&logo=d3.js&logoColor=white)](#-interactive-sensitivity-dashboard)
-[![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
-[![Status](https://img.shields.io/badge/Status-Net--Zero%20Secured-00FF66?style=for-the-badge&logo=checkmarx&logoColor=black)](#)
+<a href="https://python.org"><img src="https://img.shields.io/badge/Python-3.9%2B-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python"/></a>&nbsp;
+<a href="https://scikit-learn.org"><img src="https://img.shields.io/badge/ML-Scikit--Learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white" alt="Scikit-Learn"/></a>&nbsp;
+<a href="#-interactive-sensitivity-dashboard"><img src="https://img.shields.io/badge/Viz-D3.js-F9A03F?style=for-the-badge&logo=d3.js&logoColor=white" alt="D3.js"/></a>&nbsp;
+<a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge" alt="License"/></a>&nbsp;
+<img src="https://img.shields.io/badge/Status-Net--Zero%20Secured-00FF66?style=for-the-badge&logo=checkmarx&logoColor=black" alt="Status"/>
  
+<br/><br/>
+ 
+<em>"Compliance is a cost. Leadership is an asset."</em><br/>
+<strong>— Team X</strong>
+ 
+<br/><br/>
+ 
+<hr/>
+<h3>🏙️ The Mission</h3>
+ 
+<p><strong>NYC Local Law 97 (LL97)</strong> exposed our 2.06 billion sq. ft. real estate portfolio to an annual carbon penalty of:</p>
 <br/>
-> *"Compliance is a cost. Leadership is an asset."*
->
-> **— Team X**
- 
+<table>
+  <tr>
+    <td align="center">
+      <br/>
+      <strong>⚠️ &nbsp; ANNUAL LIABILITY EXPOSURE</strong>
+      <br/><br/>
+      <h1>$ 2,880,000,000</h1>
+      <br/>
+      <em>2.06 Billion Sq. Ft. Portfolio</em>
+      <br/><br/>
+    </td>
+  </tr>
+</table>
 <br/>
----
- 
-### 🏙️ The Mission
-**NYC Local Law 97 (LL97)** exposed our 2.06 billion sq. ft. real estate portfolio to an annual carbon penalty of:
- 
-<br/>
-```
-╔══════════════════════════════════════╗
-║                                      ║
-║     ⚠️  ANNUAL LIABILITY EXPOSURE    ║
-║                                      ║
-║         $ 2,880,000,000              ║
-║                                      ║
-║     2.06 Billion Sq. Ft. Portfolio   ║
-╚══════════════════════════════════════╝
-```
- 
-**We built an end-to-end data science platform to forensic-audit the portfolio, identify the "True Culprits," and execute a high-yield, self-funding carbon mitigation roadmap — turning a $2.88B liability into a strategic asset.**
- 
----
- 
+<p>We built an end-to-end data science platform to forensic-audit the portfolio, identify the <strong>"True Culprits,"</strong> and execute a high-yield, self-funding carbon mitigation roadmap — turning a <strong>$2.88B liability into a strategic asset.</strong></p>
+<hr/>
 </div>
 ## 📋 Table of Contents
  
@@ -50,7 +51,6 @@
  
 ## 🎯 Key Results at a Glance
  
-<div align="center">
 | Metric | Value |
 |:---|:---:|
 | 🏢 Portfolio Size | **2.06 Billion Sq. Ft.** |
@@ -60,7 +60,6 @@
 | 📈 Total Annual Savings (Blended) | **$702 Million** |
 | ⏱️ Blended Portfolio Payback | **6.41 Years** |
  
-</div>
 ---
  
 ## 🛠️ End-to-End Project Workflow
@@ -68,40 +67,40 @@
 Our platform implements a disciplined, multi-stage data science and engineering lifecycle:
  
 ```
-  ╔═══════════════════════╗
-  ║  📥 Raw Data Ingestion ║
-  ╚═══════════════════════╝
-              │
-              ▼
-  ╔═══════════════════════════════════════╗
-  ║  🔬 Forensic Data Cleaning & Imputation║
-  ║     Handling Nulls, Outliers & Anomalies║
-  ╚═══════════════════════════════════════╝
-              │
-              ▼
-  ╔═════════════════════════════════════╗
-  ║  📊 Exploratory Data Analysis (EDA)  ║
-  ║     Isolating the "Worst Offenders"   ║
-  ╚═════════════════════════════════════╝
-              │
-              ▼
-  ╔══════════════════════════════════╗
-  ║  🤖 Predictive ML Engine          ║
-  ║     Regression & Classification   ║
-  ║     11,000+ NYC Building Records  ║
-  ╚══════════════════════════════════╝
-              │
-              ▼
-  ╔══════════════════════════════════╗
-  ║  🗺️ Prescriptive Roadmap          ║
-  ║     5-Phase Capital Deployment    ║
-  ╚══════════════════════════════════╝
-              │
-              ▼
-  ╔══════════════════════════════════╗
-  ║  📈 Interactive Sensitivity Dash  ║
-  ║     D3.js Financial Stress-Test   ║
-  ╚══════════════════════════════════╝
+  ╔═══════════════════════════╗
+  ║  📥  Raw Data Ingestion   ║
+  ╚═══════════════════════════╝
+               │
+               ▼
+  ╔══════════════════════════════════════════╗
+  ║  🔬  Forensic Data Cleaning & Imputation ║
+  ║      Handling Nulls, Outliers & Anomalies║
+  ╚══════════════════════════════════════════╝
+               │
+               ▼
+  ╔══════════════════════════════════════╗
+  ║  📊  Exploratory Data Analysis (EDA) ║
+  ║      Isolating the "Worst Offenders" ║
+  ╚══════════════════════════════════════╝
+               │
+               ▼
+  ╔══════════════════════════════════════╗
+  ║  🤖  Predictive ML Engine            ║
+  ║      Regression & Classification     ║
+  ║      11,000+ NYC Building Records    ║
+  ╚══════════════════════════════════════╝
+               │
+               ▼
+  ╔══════════════════════════════════════╗
+  ║  🗺️  Prescriptive Roadmap            ║
+  ║      5-Phase Capital Deployment      ║
+  ╚══════════════════════════════════════╝
+               │
+               ▼
+  ╔══════════════════════════════════════╗
+  ║  📈  Interactive Sensitivity Dash    ║
+  ║      D3.js Financial Stress-Test     ║
+  ╚══════════════════════════════════════╝
 ```
  
 ---
@@ -135,9 +134,9 @@ Instead of throwing unhedged capital at energy-efficient properties, we engineer
 <details>
 <summary><strong>💡 Key Discoveries from Feature Importance Modeling</strong></summary>
 <br/>
-1. **Gross Floor Area (GFA)** and **Year Built** represent the strongest predictive signals for carbon footprint scaling — outperforming neighborhood, property type, and utility source in model importance ranking.
-2. **Pre-war masonry skyscrapers (1930s era) are not write-offs.** When properly audited via our Waste-heat Energy Transfer (WET) system model, they present the *highest latent return on capital* in the entire portfolio — flipping the conventional narrative on aging building stock.
-3. **Energy Star Scores are a lagging indicator.** Our model reveals assets with mid-range scores (50–65) hold disproportionate untapped reduction potential vs. their stated compliance risk.
+1. **Gross Floor Area (GFA)** and **Year Built** are the strongest predictive signals for carbon footprint scaling — outperforming neighborhood, property type, and utility source in model importance ranking.
+2. **Pre-war masonry skyscrapers (1930s era) are not write-offs.** When properly audited via our Waste-heat Energy Transfer (WET) system model, they present the *highest latent return on capital* in the entire portfolio.
+3. **Energy Star Scores are a lagging indicator.** Assets with mid-range scores (50–65) hold disproportionate untapped reduction potential vs. their stated compliance risk.
 </details>
 <details>
 <summary><strong>🖥️ CLI Audit Playground — Console Demo</strong></summary>
@@ -151,7 +150,7 @@ C:\Users\TeamX\Desktop> python ll97_playground.py
 ╚════════════════════════════════════════════════════╝
  
 [*] Training Phase: Analyzing patterns in 11,247 records...
-[✓] Model Ready. Accuracy: 94.3%
+[✓] Model Ready.
  
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
  
@@ -159,7 +158,7 @@ C:\Users\TeamX\Desktop> python ll97_playground.py
  
   Year Built          [or 'exit']: 1934
   GFA (sq ft)                    : 5,000,000
-  Energy Star Score (1–100)      : 55
+  Energy Star Score (1-100)      : 55
   Borough                        : Bronx
   Property Type                  : Multifamily Housing
  
@@ -190,9 +189,9 @@ $$\text{Payback Period} = \frac{\text{CAPEX}}{\text{Annual Savings (Utility Savi
 <br/>
 | Feature | Description |
 |:---|:---|
-| 📏 **Log Scale Toggle** | Visualize the hyper-targeted *Surgical Strike* phase ($31.64/sqft return) alongside billion-dollar capital projects on the same axis |
+| 📏 **Log Scale Toggle** | Visualize the Surgical Strike ($31.64/sqft return) alongside billion-dollar capital projects on the same axis |
 | 🎛️ **Sensitivity Sliders** | Adjust carbon price, discount rate, and utility escalation assumptions in real-time |
-| ⚠️ **Phase 2 Impact Proof** | Bypassing BMS Systems & Tuning degrades the overall portfolio payback from **7.15 yrs → 12.3 yrs** — empirically proven |
+| ⚠️ **Phase 2 Impact Proof** | Bypassing BMS Systems & Tuning degrades overall payback from **7.15 yrs → 12.3 yrs** — empirically proven |
 | 💹 **Waterfall View** | Visualize the self-funding cascade: early-phase savings unlock later-phase CAPEX |
  
 </details>
@@ -202,30 +201,21 @@ $$\text{Payback Period} = \frac{\text{CAPEX}}{\text{Annual Savings (Utility Savi
  
 Our capital deployment follows a strict **self-funding pipeline**: rapid-payback early interventions generate the liquid reserves needed to fund deep structural retrofits.
  
-<div align="center">
 | # | Scenario | GFA | CAPEX | Utility Savings | Avoided Fines | Total Savings | Payback |
 |:---:|:---|:---:|:---:|:---:|:---:|:---:|:---:|
-| 🟢 | **Surgical Strike** | 20M sqft | $500K | $2.19M | $18.50M | $20.69M | **0.02 yrs (8 Days)** |
+| 🟢 | **Surgical Strike** | 20M sqft | $500K | $2.19M | $18.50M | $20.69M | **8 Days** |
 | 🔵 | **Smart Scale** *(1960s)* | 400M sqft | $2.00B | $100.00M | $236.01M | $336.01M | **5.95 yrs** |
 | 🟡 | **WET System** *(1930s)* | 20M sqft | $1.50B | $40.00M | $82.89M | $122.89M | **12.21 yrs** |
 | 🔴 | **Full Electrification** *(1980s+)* | 100M sqft | $1.00B | $60.00M | $162.64M | $222.64M | **4.49 yrs** |
 | 🏆 | **Total Portfolio** | **540M sqft** | **$4.50B** | **$202.19M** | **$500.04M** | **$702.23M** | **6.41 yrs** |
  
-</div>
 > 💡 **Self-Funding Logic:** The Surgical Strike (8-day payback) generates immediate cash flow that seeds the Smart Scale phase, which in turn funds the deeper WET and Electrification infrastructure — making the entire $4.5B roadmap capital-efficient.
  
 ---
  
 ## 🚀 Quick Start
  
-### Prerequisites
- 
-```bash
-Python 3.9+
-pip
-```
- 
-### Installation & Run
+**Prerequisites:** Python 3.9+, pip
  
 ```bash
 # 1. Clone the repository
@@ -242,30 +232,14 @@ python models/train_ll97_model.py
 python models/ll97_playground.py
 ```
  
-### View the Dashboard
- 
 Open `app/sensitivity_dash.html` directly in any modern browser — no server required.
- 
-```bash
-# macOS
-open app/sensitivity_dash.html
- 
-# Windows
-start app/sensitivity_dash.html
- 
-# Linux
-xdg-open app/sensitivity_dash.html
-```
  
 ---
  
 ## 👥 The Heist Crew — Team X
  
-<div align="center">
 *Five specialists. One mission. Zero excuses.*
  
-</div>
-<br/>
 | Role | Operative | Domain |
 |:---:|:---|:---|
 | 🧠 **The Mastermind** | **Ahmed Adel Amin** | ML Pipeline Architecture · Forensic Cleaning · Feature Engineering |
@@ -284,11 +258,12 @@ This project is licensed under the **MIT License** — see the [LICENSE](LICENSE
  
 <div align="center">
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0D1117,50:161B22,100:0D1117&height=120&section=footer" width="100%"/>
-*Securing the Skyline — One Data Point at a Time*
+<em>Securing the Skyline — One Data Point at a Time</em><br/>
+<strong>Team X · NYC · 2024</strong>
  
-**Team X · NYC · 2024**
+<br/><br/>
  
-[![GitHub](https://img.shields.io/badge/View%20on-GitHub-181717?style=for-the-badge&logo=github)](https://github.com/ahmedadelamin/decarbonization-heist)
- 
+<a href="https://github.com/ahmedadelamin/decarbonization-heist">
+  <img src="https://img.shields.io/badge/View%20on-GitHub-181717?style=for-the-badge&logo=github" alt="GitHub"/>
+</a>
 </div>
- 
