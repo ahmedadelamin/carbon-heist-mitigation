@@ -68,40 +68,40 @@
 Our platform implements a disciplined, multi-stage data science and engineering lifecycle:
  
 ```
-  +----------------------------------------------+
-  |  STAGE 1  :  Raw Data Ingestion               |
-  +----------------------------------------------+
+  +-------------------------------------------------+
+  |  STAGE 1  :  Raw Data Ingestion                 |
+  +-------------------------------------------------+
                          |
                          v
-  +----------------------------------------------+
-  |  STAGE 2  :  Forensic Data Cleaning           |
-  |              Handling Nulls & Anomalies        |
-  +----------------------------------------------+
+  +-------------------------------------------------+
+  |  STAGE 2  :  Forensic Data Cleaning             |
+  |               Handling Nulls & Anomalies        |
+  +-------------------------------------------------+
                          |
                          v
-  +----------------------------------------------+
-  |  STAGE 3  :  Exploratory Data Analysis (EDA)  |
-  |              Isolating the "Worst Offenders"   |
-  +----------------------------------------------+
+  +-------------------------------------------------+
+  |  STAGE 3  :  Exploratory Data Analysis (EDA)    |
+  |               Isolating the "Worst Offenders"   |
+  +-------------------------------------------------+
                          |
                          v
-  +----------------------------------------------+
-  |  STAGE 4  :  Predictive ML Engine             |
-  |              Regression & Classification       |
-  |              11,000+ NYC Building Records      |
-  +----------------------------------------------+
+  +-------------------------------------------------+
+  |  STAGE 4  :  Predictive ML Engine               |
+  |               Regression & Classification       |
+  |               11,000+ NYC Building Records      |
+  +-------------------------------------------------+
                          |
                          v
-  +----------------------------------------------+
-  |  STAGE 5  :  Prescriptive Roadmap             |
-  |              5-Phase Capital Deployment        |
-  +----------------------------------------------+
+  +-------------------------------------------------+
+  |  STAGE 5  :  Prescriptive Roadmap               |
+  |               5-Phase Capital Deployment        |
+  +-------------------------------------------------+
                          |
                          v
-  +----------------------------------------------+
-  |  OUTPUT   :  Interactive Sensitivity Dash      |
-  |              D3.js Financial Stress-Test        |
-  +----------------------------------------------+
+  +-------------------------------------------------+
+  |  OUTPUT   :  Interactive Sensitivity Dash       |
+  |               D3.js Financial Stress-Test       |
+  +-------------------------------------------------+
 ```
  
 ---
