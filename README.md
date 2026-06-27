@@ -136,4 +136,4 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 *"Compliance is a cost. Leadership is an asset."*
 
-**Securing the Skyline — Team C**
+**Securing the Skyline — Team X**
