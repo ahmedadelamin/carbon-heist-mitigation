@@ -1,4 +1,4 @@
-"""<div align="center">
+<div align="center">
 
 # 🕵️‍♂️ THE $2.8 BILLION HEIST
 ### Data-Driven Decarbonization Counter-Intelligence Platform
