@@ -8,7 +8,7 @@
 [![D3JS](https://img.shields.io/badge/Viz-D3.js-F9A03F?style=for-the-badge&logo=d3.js&logoColor=white)](#)
 [![Status](https://img.shields.io/badge/Status-Net--Zero%20Secured-00FF66?style=for-the-badge)](#)
 
-*“Compliance is a cost. Leadership is an asset.”* — **Team C**
+*“Compliance is a cost. Leadership is an asset.”* — **Team X**
 
 ---
 </div>
