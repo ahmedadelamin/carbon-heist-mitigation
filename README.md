@@ -30,7 +30,7 @@
       <br/>
       <strong>⚠️ &nbsp; ANNUAL LIABILITY EXPOSURE</strong>
       <br/><br/>
-      <h1> $2,880,000,000 </h1>
+      $2,880,000,000
       <br/>
       <em>2.06 Billion Sq. Ft. Portfolio</em>
       <br/><br/>
