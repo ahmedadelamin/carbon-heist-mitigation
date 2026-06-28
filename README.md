@@ -101,7 +101,7 @@ decarbonization-heist/
 │
 ├── 📁 data/
 │   ├── 🐍 clean_data_pipeline.py   # Dataset wrangling, cleaning & null-value imputation
-│   └── 📊 sample_nyc_energy.csv    # Anonymized slice of 11,000+ NYC building energy records
+│   └── 📊 sample_nyc_energy.xlsx    # Anonymized slice of 11,000+ NYC building energy records
 │
 ├── 📁 app/
 │   └── 🌐 sensitivity_dash.html    # Interactive Sensitivity Analysis dashboard (D3.js)
