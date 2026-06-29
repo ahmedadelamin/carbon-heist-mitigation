@@ -84,6 +84,10 @@ def load_data():
         if col in df.columns:
             df[col] = pd.to_numeric(df[col], errors="coerce")
 
+    # Recalculate LL97 Penalty on Total GHG (not just excess)
+    if "Total GHG Emissions (Metric Tons CO2e)" in df.columns:
+        df["Base LL97 Penalty"] = df["Total GHG Emissions (Metric Tons CO2e)"] * 268
+
     if "Year Built" in df.columns and "Building Age" not in df.columns:
         df["Building Age"] = 2026 - df["Year Built"]
         
@@ -127,17 +131,26 @@ with st.sidebar.expander("🏢 Property Details", expanded=False):
     sel_occ = st.multiselect("Occupancy Status", raw_df[C_OCCUPANCY].dropna().unique() if C_OCCUPANCY in raw_df.columns else [])
     sel_const = st.multiselect("Construction Status", raw_df[C_CONSTRUCTION].dropna().unique() if C_CONSTRUCTION in raw_df.columns else [])
     
-    age_min, age_max = int(raw_df[C_AGE].min()), int(raw_df[C_AGE].max()) if C_AGE in raw_df.columns else (0, 100)
+    if C_AGE in raw_df.columns:
+        age_min, age_max = int(raw_df[C_AGE].min()), int(raw_df[C_AGE].max())
+    else:
+        age_min, age_max = 0, 100
     sel_age = st.slider("Building Age Range", age_min, age_max, (age_min, age_max))
 
 with st.sidebar.expander("📈 Performance & Risk", expanded=False):
     score_min, score_max = 0, 100
     sel_score = st.slider("ENERGY STAR Score", score_min, score_max, (score_min, score_max))
     
-    ghg_min, ghg_max = float(raw_df[C_GHG].min()), float(raw_df[C_GHG].max()) if C_GHG in raw_df.columns else (0.0, 1000.0)
+    if C_GHG in raw_df.columns:
+        ghg_min, ghg_max = float(raw_df[C_GHG].min()), float(raw_df[C_GHG].max())
+    else:
+        ghg_min, ghg_max = 0.0, 1000.0
     sel_ghg = st.slider("GHG Emissions (tCO₂e)", ghg_min, ghg_max, (ghg_min, ghg_max))
     
-    pen_min, pen_max = float(raw_df[C_PENALTY].min()), float(raw_df[C_PENALTY].max()) if C_PENALTY in raw_df.columns else (0.0, 1000000.0)
+    if C_PENALTY in raw_df.columns:
+        pen_min, pen_max = float(raw_df[C_PENALTY].min()), float(raw_df[C_PENALTY].max())
+    else:
+        pen_min, pen_max = 0.0, 1000000.0
     sel_pen = st.slider("LL97 Penalty ($)", pen_min, pen_max, (pen_min, pen_max))
 
 with st.sidebar.expander("⚠️ Data Quality", expanded=False):
