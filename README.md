@@ -255,7 +255,7 @@ This project is licensed under the **MIT License** — see the [LICENSE](LICENSE
 
 <br/><br/>
 
-<a href="https://github.com/ahmedadelamin/decarbonization-heist">
+<a href="https://github.com/ahmedadelamin/carbon-heist-mitigation">
   <img src="https://img.shields.io/badge/View%20on-GitHub-181717?style=for-the-badge&logo=github" alt="GitHub"/>
 </a>
 
