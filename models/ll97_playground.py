@@ -102,7 +102,7 @@ def start_playground():
     print("   LL97 DATA-DRIVEN INSIGHTS ENGINE - CURRENT STATUS ONLY")
     print("═"*80)
     
-    file_name = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..\data\sample_nyc_energy.xlsx')
+    file_name = os.path.join(os.path.dirname(os.path.abspath(__file__)), '../data/sample_nyc_energy.xlsx')
     if not os.path.exists(file_name):
         print(f"Error: Database '{file_name}' not found.")
         return

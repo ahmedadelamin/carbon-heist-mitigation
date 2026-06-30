@@ -14,7 +14,7 @@ def train_strategic_model():
     print("="*60)
     
     # 1. Load Data
-    file_name = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..\data\sample_nyc_energy.xlsx')
+    file_name = os.path.join(os.path.dirname(os.path.abspath(__file__)), '../data/sample_nyc_energy.xlsx')
     print(f"[*] Step 1: Loading data from '{file_name}'...")
     
     if not os.path.exists(file_name):
