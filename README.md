@@ -203,8 +203,8 @@ Our capital deployment follows a strict **self-funding pipeline**: rapid-payback
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/ahmedadelamin/decarbonization-heist.git
-cd decarbonization-heist
+git clone https://github.com/ahmedadelamin/carbon-heist-mitigation.git
+cd carbon-heist-mitigation
 
 # 2. Install dependencies
 pip install -r requirements.txt
