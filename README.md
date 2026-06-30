@@ -251,7 +251,7 @@ This project is licensed under the **MIT License** — see the [LICENSE](LICENSE
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0D1117,50:161B22,100:0D1117&height=120&section=footer" width="100%"/>
 
 <em>Securing the Skyline — One Data Point at a Time</em><br/>
-<strong>Team X · NYC · 2024</strong>
+<strong>Team X · NYC · 2026</strong>
 
 <br/><br/>
 
