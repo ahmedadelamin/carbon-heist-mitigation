@@ -1,0 +1,636 @@
+<mxfile host="Electron" agent="ChatGPT">
+  <diagram id="nyc-energy-erd" name="Page-1">
+    <mxGraphModel dx="7633" dy="2087" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="4200" pageHeight="3000" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="e_cities" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;fontSize=14;" value="cities" vertex="1">
+          <mxGeometry height="55" width="150" x="120" y="123.98" as="geometry" />
+        </mxCell>
+        <mxCell id="e_boroughs" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;fontSize=14;" value="boroughs" vertex="1">
+          <mxGeometry height="55" width="170" x="110" y="465" as="geometry" />
+        </mxCell>
+        <mxCell id="e_parent_properties" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;fontSize=14;" value="parent_properties" vertex="1">
+          <mxGeometry height="55" width="210" x="410" y="80.52" as="geometry" />
+        </mxCell>
+        <mxCell id="e_property_types" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;fontSize=14;" value="property_types" vertex="1">
+          <mxGeometry height="55" width="190" x="900" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="e_construction_statuses" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;fontSize=14;" value="construction_statuses" vertex="1">
+          <mxGeometry height="55" width="240" x="1280" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="e_properties" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;fontSize=14;" value="properties" vertex="1">
+          <mxGeometry height="65" width="210" x="830" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="e_metering_areas" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;fontSize=14;" value="metering_areas" vertex="1">
+          <mxGeometry height="55" width="200" x="1710" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="e_property_metering" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;fontSize=14;" value="property_metering" vertex="1">
+          <mxGeometry height="55" width="210" x="1720" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="e_energy_metrics" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;fontSize=14;" value="energy_metrics" vertex="1">
+          <mxGeometry height="55" width="210" x="1700" y="900" as="geometry" />
+        </mxCell>
+        <mxCell id="e_emission_metrics" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;fontSize=14;" value="emission_metrics" vertex="1">
+          <mxGeometry height="55" width="220" x="1700" y="1320" as="geometry" />
+        </mxCell>
+        <mxCell id="e_ll97_penalties" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;fontSize=14;" value="ll97_penalties" vertex="1">
+          <mxGeometry height="55" width="190" x="1180" y="1610" as="geometry" />
+        </mxCell>
+        <mxCell id="e_fuel_types" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;fontSize=14;" value="fuel_types" vertex="1">
+          <mxGeometry height="55" width="170" x="180" y="1260" as="geometry" />
+        </mxCell>
+        <mxCell id="e_property_fuel_usage" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;fontSize=14;" value="property_fuel_usage" vertex="1">
+          <mxGeometry height="55" width="220" x="650" y="1290" as="geometry" />
+        </mxCell>
+        <mxCell id="e_alert_types" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;fontSize=14;" value="alert_types" vertex="1">
+          <mxGeometry height="55" width="170" x="180" y="1700" as="geometry" />
+        </mxCell>
+        <mxCell id="e_property_alerts" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;fontSize=14;" value="property_alerts" vertex="1">
+          <mxGeometry height="55" width="210" x="650" y="1700" as="geometry" />
+        </mxCell>
+        <mxCell id="a_cities_0" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=11;" value="&lt;u&gt;city_id&lt;/u&gt;" vertex="1">
+          <mxGeometry height="44" width="160" x="286.9605680426091" y="159.48482376605403" as="geometry" />
+        </mxCell>
+        <mxCell id="ea_cities_0" edge="1" parent="1" source="e_cities" style="endArrow=none;html=1;rounded=0;strokeWidth=1.4;" target="a_cities_0" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a_cities_1" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=11;" value="city_name" vertex="1">
+          <mxGeometry height="44" width="160" x="-56.96056804260908" y="91.515176233946" as="geometry" />
+        </mxCell>
+        <mxCell id="ea_cities_1" edge="1" parent="1" source="e_cities" style="endArrow=none;html=1;rounded=0;strokeWidth=1.4;" target="a_cities_1" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a_boroughs_0" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=11;" value="&lt;u&gt;borough_id&lt;/u&gt;" vertex="1">
+          <mxGeometry height="44" width="160" x="160.0005680426091" y="585.0048237660541" as="geometry" />
+        </mxCell>
+        <mxCell id="ea_boroughs_0" edge="1" parent="1" source="e_boroughs" style="endArrow=none;html=1;rounded=0;strokeWidth=1.4;" target="a_boroughs_0" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a_boroughs_1" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=11;" value="borough_name" vertex="1">
+          <mxGeometry height="44" width="160" x="-7.0473251553670195" y="553.6523400226492" as="geometry" />
+        </mxCell>
+        <mxCell id="ea_boroughs_1" edge="1" parent="1" source="e_boroughs" style="endArrow=none;html=1;rounded=0;strokeWidth=1.4;" target="a_boroughs_1" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a_boroughs_2" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=11;" value="city_id (FK)" vertex="1">
+          <mxGeometry height="44" width="160" x="-14.91324288724212" y="390.0028362112967" as="geometry" />
+        </mxCell>
+        <mxCell id="ea_boroughs_2" edge="1" parent="1" source="e_boroughs" style="endArrow=none;html=1;rounded=0;strokeWidth=1.4;" target="a_boroughs_2" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a_parent_properties_0" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=11;" value="&lt;u&gt;parent_property_id&lt;/u&gt;" vertex="1">
+          <mxGeometry height="44" width="160" x="605.0005680426091" y="145.00482376605405" as="geometry" />
+        </mxCell>
+        <mxCell id="ea_parent_properties_0" edge="1" parent="1" source="e_parent_properties" style="endArrow=none;html=1;rounded=0;strokeWidth=1.4;" target="a_parent_properties_0" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a_parent_properties_1" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=11;" value="parent_property_name" vertex="1">
+          <mxGeometry height="44" width="160" x="334.5294319573909" y="17.515176233945994" as="geometry" />
+        </mxCell>
+        <mxCell id="ea_parent_properties_1" edge="1" parent="1" source="e_parent_properties" style="endArrow=none;html=1;rounded=0;strokeWidth=1.4;" target="a_parent_properties_1" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a_property_types_0" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=11;" value="&lt;u&gt;property_type_id&lt;/u&gt;" vertex="1">
+          <mxGeometry height="44" width="160" x="1080.6205680426092" y="159.48482376605403" as="geometry" />
+        </mxCell>
+        <mxCell id="ea_property_types_0" edge="1" parent="1" source="e_property_types" style="endArrow=none;html=1;rounded=0;strokeWidth=1.4;" target="a_property_types_0" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a_property_types_1" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=11;" value="property_type_name" vertex="1">
+          <mxGeometry height="44" width="160" x="740.6594319573909" y="17.515176233945994" as="geometry" />
+        </mxCell>
+        <mxCell id="ea_property_types_1" edge="1" parent="1" source="e_property_types" style="endArrow=none;html=1;rounded=0;strokeWidth=1.4;" target="a_property_types_1" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a_construction_statuses_0" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=11;" value="&lt;u&gt;construction_status_id&lt;/u&gt;" vertex="1">
+          <mxGeometry height="44" width="160" x="1450.000568042609" y="159.48482376605403" as="geometry" />
+        </mxCell>
+        <mxCell id="ea_construction_statuses_0" edge="1" parent="1" source="e_construction_statuses" style="endArrow=none;html=1;rounded=0;strokeWidth=1.4;" target="a_construction_statuses_0" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a_construction_statuses_1" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=11;" value="status_name" vertex="1">
+          <mxGeometry height="44" width="160" x="1118.189431957391" y="29.995176233945994" as="geometry" />
+        </mxCell>
+        <mxCell id="ea_construction_statuses_1" edge="1" parent="1" source="e_construction_statuses" style="endArrow=none;html=1;rounded=0;strokeWidth=1.4;" target="a_construction_statuses_1" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a_properties_0" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=11;" value="&lt;u&gt;property_id&lt;/u&gt;" vertex="1">
+          <mxGeometry height="44" width="160" x="1240.6207203950564" y="575.3314397420797" as="geometry" />
+        </mxCell>
+        <mxCell id="ea_properties_0" edge="1" parent="1" source="e_properties" style="endArrow=none;html=1;rounded=0;strokeWidth=1.4;" target="a_properties_0" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a_properties_1" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=11;" value="property_name" vertex="1">
+          <mxGeometry height="44" width="160" x="1169.3657189410376" y="708.0477179874055" as="geometry" />
+        </mxCell>
+        <mxCell id="ea_properties_1" edge="1" parent="1" source="e_properties" style="endArrow=none;html=1;rounded=0;strokeWidth=1.4;" target="a_properties_1" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a_properties_2" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=11;" value="parent_property_id (FK)" vertex="1">
+          <mxGeometry height="44" width="160" x="1026.0933197952338" y="800.0899537237701" as="geometry" />
+        </mxCell>
+        <mxCell id="ea_properties_2" edge="1" parent="1" source="e_properties" style="endArrow=none;html=1;rounded=0;strokeWidth=1.4;" target="a_properties_2" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a_properties_3" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=11;" value="city_id (FK)" vertex="1">
+          <mxGeometry height="44" width="160" x="843.6255029823651" y="830.3723799731592" as="geometry" />
+        </mxCell>
+        <mxCell id="ea_properties_3" edge="1" parent="1" source="e_properties" style="endArrow=none;html=1;rounded=0;strokeWidth=1.4;" target="a_properties_3" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a_properties_4" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=11;" value="borough_id (FK)" vertex="1">
+          <mxGeometry height="44" width="160" x="620.0034463586877" y="787.2876578246354" as="geometry" />
+        </mxCell>
+        <mxCell id="ea_properties_4" edge="1" parent="1" source="e_properties" style="endArrow=none;html=1;rounded=0;strokeWidth=1.4;" target="a_properties_4" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a_properties_5" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=11;" value="property_type_id (FK)" vertex="1">
+          <mxGeometry height="44" width="160" x="527.7113795239284" y="693.6461371748377" as="geometry" />
+        </mxCell>
+        <mxCell id="ea_properties_5" edge="1" parent="1" source="e_properties" style="endArrow=none;html=1;rounded=0;strokeWidth=1.4;" target="a_properties_5" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a_properties_6" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=11;" value="year_built" vertex="1">
+          <mxGeometry height="44" width="160" x="466.63719138478393" y="557.959802622375" as="geometry" />
+        </mxCell>
+        <mxCell id="ea_properties_6" edge="1" parent="1" source="e_properties" style="endArrow=none;html=1;rounded=0;strokeWidth=1.4;" target="a_properties_6" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a_properties_7" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=11;" value="decade_built" vertex="1">
+          <mxGeometry height="44" width="160" x="494.5322424201768" y="415.9827582156221" as="geometry" />
+        </mxCell>
+        <mxCell id="ea_properties_7" edge="1" parent="1" source="e_properties" style="endArrow=none;html=1;rounded=0;strokeWidth=1.4;" target="a_properties_7" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a_properties_8" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=11;" value="building_age" vertex="1">
+          <mxGeometry height="44" width="160" x="605.0061126097061" y="300.24023381929885" as="geometry" />
+        </mxCell>
+        <mxCell id="ea_properties_8" edge="1" parent="1" source="e_properties" style="endArrow=none;html=1;rounded=0;strokeWidth=1.4;" target="a_properties_8" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a_properties_9" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=11;" value="construction_status_id (FK)" vertex="1">
+          <mxGeometry height="44" width="160" x="772.7505696474119" y="237.24744692397582" as="geometry" />
+        </mxCell>
+        <mxCell id="ea_properties_9" edge="1" parent="1" source="e_properties" style="endArrow=none;html=1;rounded=0;strokeWidth=1.4;" target="a_properties_9" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a_properties_10" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=11;" value="occupancy_percent" vertex="1">
+          <mxGeometry height="44" width="160" x="1063.5373799658078" y="255.99528586199455" as="geometry" />
+        </mxCell>
+        <mxCell id="ea_properties_10" edge="1" parent="1" source="e_properties" style="endArrow=none;html=1;rounded=0;strokeWidth=1.4;" target="a_properties_10" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a_properties_11" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=11;" value="gfa_buildings_parking_ft2" vertex="1">
+          <mxGeometry height="44" width="160" x="1122.0217539357732" y="311.8443672015849" as="geometry" />
+        </mxCell>
+        <mxCell id="ea_properties_11" edge="1" parent="1" source="e_properties" style="endArrow=none;html=1;rounded=0;strokeWidth=1.4;" target="a_properties_11" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a_properties_12" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=11;" value="gfa_buildings_ft2" vertex="1">
+          <mxGeometry height="44" width="160" x="1223.5346620400314" y="432.34481892926135" as="geometry" />
+        </mxCell>
+        <mxCell id="ea_properties_12" edge="1" parent="1" source="e_properties" style="endArrow=none;html=1;rounded=0;strokeWidth=1.4;" target="a_properties_12" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a_metering_areas_0" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=11;" value="&lt;u&gt;metering_area_id&lt;/u&gt;" vertex="1">
+          <mxGeometry height="44" width="160" x="1915.000568042609" y="145.00482376605405" as="geometry" />
+        </mxCell>
+        <mxCell id="ea_metering_areas_0" edge="1" parent="1" source="e_metering_areas" style="endArrow=none;html=1;rounded=0;strokeWidth=1.4;" target="a_metering_areas_0" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a_metering_areas_1" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=11;" value="metering_area_name" vertex="1">
+          <mxGeometry height="44" width="160" x="1526.959431957391" y="47.51517623394599" as="geometry" />
+        </mxCell>
+        <mxCell id="ea_metering_areas_1" edge="1" parent="1" source="e_metering_areas" style="endArrow=none;html=1;rounded=0;strokeWidth=1.4;" target="a_metering_areas_1" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a_property_metering_0" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=11;" value="&lt;u&gt;property_metering_id&lt;/u&gt;" vertex="1">
+          <mxGeometry height="44" width="160" x="1970.6599435307066" y="593.6482099040138" as="geometry" />
+        </mxCell>
+        <mxCell id="ea_property_metering_0" edge="1" parent="1" source="e_property_metering" style="endArrow=none;html=1;rounded=0;strokeWidth=1.4;" target="a_property_metering_0" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a_property_metering_1" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=11;" value="property_id (FK)" vertex="1">
+          <mxGeometry height="44" width="160" x="1649.5925061343808" y="686.6856739505049" as="geometry" />
+        </mxCell>
+        <mxCell id="ea_property_metering_1" edge="1" parent="1" source="e_property_metering" style="endArrow=none;html=1;rounded=0;strokeWidth=1.4;" target="a_property_metering_1" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a_property_metering_2" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=11;" value="energy_metering_area_id (FK)" vertex="1">
+          <mxGeometry height="44" width="160" x="1519.3400564692931" y="457.3517900959862" as="geometry" />
+        </mxCell>
+        <mxCell id="ea_property_metering_2" edge="1" parent="1" source="e_property_metering" style="endArrow=none;html=1;rounded=0;strokeWidth=1.4;" target="a_property_metering_2" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a_property_metering_3" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=11;" value="water_metering_area_id (FK)" vertex="1">
+          <mxGeometry height="44" width="160" x="1799.9974938656194" y="371.9843260494951" as="geometry" />
+        </mxCell>
+        <mxCell id="ea_property_metering_3" edge="1" parent="1" source="e_property_metering" style="endArrow=none;html=1;rounded=0;strokeWidth=1.4;" target="a_property_metering_3" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a_energy_metrics_0" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=11;" value="&lt;u&gt;energy_metric_id&lt;/u&gt;" vertex="1">
+          <mxGeometry height="44" width="160" x="2048.4219706876097" y="954.17398604479" as="geometry" />
+        </mxCell>
+        <mxCell id="ea_energy_metrics_0" edge="1" parent="1" source="e_energy_metrics" style="endArrow=none;html=1;rounded=0;strokeWidth=1.4;" target="a_energy_metrics_0" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a_energy_metrics_1" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=11;" value="property_id (FK)" vertex="1">
+          <mxGeometry height="44" width="160" x="1972.3112031763112" y="1067.7110642037894" as="geometry" />
+        </mxCell>
+        <mxCell id="ea_energy_metrics_1" edge="1" parent="1" source="e_energy_metrics" style="endArrow=none;html=1;rounded=0;strokeWidth=1.4;" target="a_energy_metrics_1" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a_energy_metrics_2" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=11;" value="energy_star_score" vertex="1">
+          <mxGeometry height="44" width="160" x="1829.9335984947504" y="1137.7838187059906" as="geometry" />
+        </mxCell>
+        <mxCell id="ea_energy_metrics_2" edge="1" parent="1" source="e_energy_metrics" style="endArrow=none;html=1;rounded=0;strokeWidth=1.4;" target="a_energy_metrics_2" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a_energy_metrics_3" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=11;" value="national_median_energy_star_score" vertex="1">
+          <mxGeometry height="44" width="160" x="1659.4391208376298" y="1145.6163115711042" as="geometry" />
+        </mxCell>
+        <mxCell id="ea_energy_metrics_3" edge="1" parent="1" source="e_energy_metrics" style="endArrow=none;html=1;rounded=0;strokeWidth=1.4;" target="a_energy_metrics_3" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a_energy_metrics_4" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=11;" value="target_energy_star_score" vertex="1">
+          <mxGeometry height="44" width="160" x="1506.5116278071407" y="1089.1098326612005" as="geometry" />
+        </mxCell>
+        <mxCell id="ea_energy_metrics_4" edge="1" parent="1" source="e_energy_metrics" style="endArrow=none;html=1;rounded=0;strokeWidth=1.4;" target="a_energy_metrics_4" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a_energy_metrics_5" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=11;" value="site_eui_kbtu_ft2" vertex="1">
+          <mxGeometry height="44" width="160" x="1412.1279176613189" y="983.4052473673147" as="geometry" />
+        </mxCell>
+        <mxCell id="ea_energy_metrics_5" edge="1" parent="1" source="e_energy_metrics" style="endArrow=none;html=1;rounded=0;strokeWidth=1.4;" target="a_energy_metrics_5" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a_energy_metrics_6" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=11;" value="site_energy_use_kbtu" vertex="1">
+          <mxGeometry height="44" width="160" x="1401.5780293123903" y="856.82601395521" as="geometry" />
+        </mxCell>
+        <mxCell id="ea_energy_metrics_6" edge="1" parent="1" source="e_energy_metrics" style="endArrow=none;html=1;rounded=0;strokeWidth=1.4;" target="a_energy_metrics_6" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a_energy_metrics_7" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=11;" value="source_eui_kbtu_ft2" vertex="1">
+          <mxGeometry height="44" width="160" x="1477.688796823689" y="743.2889357962106" as="geometry" />
+        </mxCell>
+        <mxCell id="ea_energy_metrics_7" edge="1" parent="1" source="e_energy_metrics" style="endArrow=none;html=1;rounded=0;strokeWidth=1.4;" target="a_energy_metrics_7" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a_energy_metrics_8" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=11;" value="source_energy_use_kbtu" vertex="1">
+          <mxGeometry height="44" width="160" x="1649.5964015052493" y="769.9961812940094" as="geometry" />
+        </mxCell>
+        <mxCell id="ea_energy_metrics_8" edge="1" parent="1" source="e_energy_metrics" style="endArrow=none;html=1;rounded=0;strokeWidth=1.4;" target="a_energy_metrics_8" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a_energy_metrics_9" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=11;" value="green_power_kwh" vertex="1">
+          <mxGeometry height="44" width="160" x="1812.3108791623702" y="649.6436884288958" as="geometry" />
+        </mxCell>
+        <mxCell id="ea_energy_metrics_9" edge="1" parent="1" source="e_energy_metrics" style="endArrow=none;html=1;rounded=0;strokeWidth=1.4;" target="a_energy_metrics_9" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a_energy_metrics_10" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=11;" value="egrid_output_emissions_rate_kgco2e_mbtu" vertex="1">
+          <mxGeometry height="44" width="160" x="1943.4883721928595" y="721.8901673387994" as="geometry" />
+        </mxCell>
+        <mxCell id="ea_energy_metrics_10" edge="1" parent="1" source="e_energy_metrics" style="endArrow=none;html=1;rounded=0;strokeWidth=1.4;" target="a_energy_metrics_10" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a_energy_metrics_11" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=11;" value="percent_electricity_green_power" vertex="1">
+          <mxGeometry height="44" width="160" x="2037.8720823386811" y="827.5947526326852" as="geometry" />
+        </mxCell>
+        <mxCell id="ea_energy_metrics_11" edge="1" parent="1" source="e_energy_metrics" style="endArrow=none;html=1;rounded=0;strokeWidth=1.4;" target="a_energy_metrics_11" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a_emission_metrics_0" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=11;" value="&lt;u&gt;emission_metric_id&lt;/u&gt;" vertex="1">
+          <mxGeometry height="44" width="160" x="2053.4219706876097" y="1374.17398604479" as="geometry" />
+        </mxCell>
+        <mxCell id="ea_emission_metrics_0" edge="1" parent="1" source="e_emission_metrics" style="endArrow=none;html=1;rounded=0;strokeWidth=1.4;" target="a_emission_metrics_0" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a_emission_metrics_1" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=11;" value="property_id (FK)" vertex="1">
+          <mxGeometry height="44" width="160" x="1880.3927410733556" y="1543.5782257551325" as="geometry" />
+        </mxCell>
+        <mxCell id="ea_emission_metrics_1" edge="1" parent="1" source="e_emission_metrics" style="endArrow=none;html=1;rounded=0;strokeWidth=1.4;" target="a_emission_metrics_1" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a_emission_metrics_2" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=11;" value="avoided_emissions_metric_tons_co2e" vertex="1">
+          <mxGeometry height="44" width="160" x="1594.114709978027" y="1548.7651134867535" as="geometry" />
+        </mxCell>
+        <mxCell id="ea_emission_metrics_2" edge="1" parent="1" source="e_emission_metrics" style="endArrow=none;html=1;rounded=0;strokeWidth=1.4;" target="a_emission_metrics_2" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a_emission_metrics_3" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=11;" value="total_ghg_emissions_metric_tons_co2e" vertex="1">
+          <mxGeometry height="44" width="160" x="1410.1610738240113" y="1385.8288169845146" as="geometry" />
+        </mxCell>
+        <mxCell id="ea_emission_metrics_3" edge="1" parent="1" source="e_emission_metrics" style="endArrow=none;html=1;rounded=0;strokeWidth=1.4;" target="a_emission_metrics_3" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a_emission_metrics_4" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=11;" value="total_ghg_emissions_intensity_kgco2e_ft2" vertex="1">
+          <mxGeometry height="44" width="160" x="1467.0526726056185" y="1177.46369080934" as="geometry" />
+        </mxCell>
+        <mxCell id="ea_emission_metrics_4" edge="1" parent="1" source="e_emission_metrics" style="endArrow=none;html=1;rounded=0;strokeWidth=1.4;" target="a_emission_metrics_4" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a_emission_metrics_5" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=11;" value="net_emissions_metric_tons_co2e" vertex="1">
+          <mxGeometry height="44" width="160" x="1724.9989720631756" y="1198.8129248451198" as="geometry" />
+        </mxCell>
+        <mxCell id="ea_emission_metrics_5" edge="1" parent="1" source="e_emission_metrics" style="endArrow=none;html=1;rounded=0;strokeWidth=1.4;" target="a_emission_metrics_5" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a_emission_metrics_6" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=11;" value="national_median_total_ghg_emissions_metric_tons_co2e" vertex="1">
+          <mxGeometry height="44" width="160" x="1989.9378597682023" y="1168.1172420743492" as="geometry" />
+        </mxCell>
+        <mxCell id="ea_emission_metrics_6" edge="1" parent="1" source="e_emission_metrics" style="endArrow=none;html=1;rounded=0;strokeWidth=1.4;" target="a_emission_metrics_6" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a_ll97_penalties_0" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=11;" value="&lt;u&gt;penalty_id&lt;/u&gt;" vertex="1">
+          <mxGeometry height="44" width="160" x="1366.960568042609" y="1649.484823766054" as="geometry" />
+        </mxCell>
+        <mxCell id="ea_ll97_penalties_0" edge="1" parent="1" source="e_ll97_penalties" style="endArrow=none;html=1;rounded=0;strokeWidth=1.4;" target="a_ll97_penalties_0" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a_ll97_penalties_1" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=11;" value="property_id (FK)" vertex="1">
+          <mxGeometry height="44" width="160" x="1141.8063628009588" y="1725.3636962494447" as="geometry" />
+        </mxCell>
+        <mxCell id="ea_ll97_penalties_1" edge="1" parent="1" source="e_ll97_penalties" style="endArrow=none;html=1;rounded=0;strokeWidth=1.4;" target="a_ll97_penalties_1" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a_ll97_penalties_2" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=11;" value="base_ll97_penalty" vertex="1">
+          <mxGeometry height="44" width="160" x="1023.0394319573909" y="1581.515176233946" as="geometry" />
+        </mxCell>
+        <mxCell id="ea_ll97_penalties_2" edge="1" parent="1" source="e_ll97_penalties" style="endArrow=none;html=1;rounded=0;strokeWidth=1.4;" target="a_ll97_penalties_2" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a_ll97_penalties_3" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=11;" value="base_penalty_per_ft2" vertex="1">
+          <mxGeometry height="44" width="160" x="1248.193637199041" y="1505.6363037505553" as="geometry" />
+        </mxCell>
+        <mxCell id="ea_ll97_penalties_3" edge="1" parent="1" source="e_ll97_penalties" style="endArrow=none;html=1;rounded=0;strokeWidth=1.4;" target="a_ll97_penalties_3" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a_fuel_types_0" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=11;" value="&lt;u&gt;fuel_type_id&lt;/u&gt;" vertex="1">
+          <mxGeometry height="44" width="160" x="294.3405680426091" y="1153.364823766054" as="geometry" />
+        </mxCell>
+        <mxCell id="ea_fuel_types_0" edge="1" parent="1" source="e_fuel_types" style="endArrow=none;html=1;rounded=0;strokeWidth=1.4;" target="a_fuel_types_0" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a_fuel_types_1" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=11;" value="fuel_type_name" vertex="1">
+          <mxGeometry height="44" width="160" x="52.95267484463298" y="1343.6523400226492" as="geometry" />
+        </mxCell>
+        <mxCell id="ea_fuel_types_1" edge="1" parent="1" source="e_fuel_types" style="endArrow=none;html=1;rounded=0;strokeWidth=1.4;" target="a_fuel_types_1" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a_fuel_types_2" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=11;" value="unit" vertex="1">
+          <mxGeometry height="44" width="160" x="119.99675711275788" y="1153.3628362112968" as="geometry" />
+        </mxCell>
+        <mxCell id="ea_fuel_types_2" edge="1" parent="1" source="e_fuel_types" style="endArrow=none;html=1;rounded=0;strokeWidth=1.4;" target="a_fuel_types_2" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a_property_fuel_usage_0" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=11;" value="&lt;u&gt;fuel_usage_id&lt;/u&gt;" vertex="1">
+          <mxGeometry height="44" width="160" x="905.6599435307069" y="1363.6482099040138" as="geometry" />
+        </mxCell>
+        <mxCell id="ea_property_fuel_usage_0" edge="1" parent="1" source="e_property_fuel_usage" style="endArrow=none;html=1;rounded=0;strokeWidth=1.4;" target="a_property_fuel_usage_0" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a_property_fuel_usage_1" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=11;" value="property_id (FK)" vertex="1">
+          <mxGeometry height="44" width="160" x="584.5925061343806" y="1456.685673950505" as="geometry" />
+        </mxCell>
+        <mxCell id="ea_property_fuel_usage_1" edge="1" parent="1" source="e_property_fuel_usage" style="endArrow=none;html=1;rounded=0;strokeWidth=1.4;" target="a_property_fuel_usage_1" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a_property_fuel_usage_2" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=11;" value="fuel_type_id (FK)" vertex="1">
+          <mxGeometry height="44" width="160" x="454.34005646929313" y="1227.3517900959862" as="geometry" />
+        </mxCell>
+        <mxCell id="ea_property_fuel_usage_2" edge="1" parent="1" source="e_property_fuel_usage" style="endArrow=none;html=1;rounded=0;strokeWidth=1.4;" target="a_property_fuel_usage_2" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a_property_fuel_usage_3" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=11;" value="usage_kbtu" vertex="1">
+          <mxGeometry height="44" width="160" x="775.4074938656194" y="1134.314326049495" as="geometry" />
+        </mxCell>
+        <mxCell id="ea_property_fuel_usage_3" edge="1" parent="1" source="e_property_fuel_usage" style="endArrow=none;html=1;rounded=0;strokeWidth=1.4;" target="a_property_fuel_usage_3" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a_alert_types_0" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=11;" value="&lt;u&gt;alert_type_id&lt;/u&gt;" vertex="1">
+          <mxGeometry height="44" width="160" x="356.9605680426091" y="1739.484823766054" as="geometry" />
+        </mxCell>
+        <mxCell id="ea_alert_types_0" edge="1" parent="1" source="e_alert_types" style="endArrow=none;html=1;rounded=0;strokeWidth=1.4;" target="a_alert_types_0" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a_alert_types_1" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=11;" value="alert_name" vertex="1">
+          <mxGeometry height="44" width="160" x="13.039431957390917" y="1671.515176233946" as="geometry" />
+        </mxCell>
+        <mxCell id="ea_alert_types_1" edge="1" parent="1" source="e_alert_types" style="endArrow=none;html=1;rounded=0;strokeWidth=1.4;" target="a_alert_types_1" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a_property_alerts_0" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=11;" value="&lt;u&gt;property_alert_id&lt;/u&gt;" vertex="1">
+          <mxGeometry height="44" width="160" x="900.6599435307069" y="1773.6482099040138" as="geometry" />
+        </mxCell>
+        <mxCell id="ea_property_alerts_0" edge="1" parent="1" source="e_property_alerts" style="endArrow=none;html=1;rounded=0;strokeWidth=1.4;" target="a_property_alerts_0" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a_property_alerts_1" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=11;" value="property_id (FK)" vertex="1">
+          <mxGeometry height="44" width="160" x="579.5925061343806" y="1866.685673950505" as="geometry" />
+        </mxCell>
+        <mxCell id="ea_property_alerts_1" edge="1" parent="1" source="e_property_alerts" style="endArrow=none;html=1;rounded=0;strokeWidth=1.4;" target="a_property_alerts_1" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a_property_alerts_2" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=11;" value="alert_type_id (FK)" vertex="1">
+          <mxGeometry height="44" width="160" x="449.34005646929313" y="1637.3517900959862" as="geometry" />
+        </mxCell>
+        <mxCell id="ea_property_alerts_2" edge="1" parent="1" source="e_property_alerts" style="endArrow=none;html=1;rounded=0;strokeWidth=1.4;" target="a_property_alerts_2" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a_property_alerts_3" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=11;" value="alert_status" vertex="1">
+          <mxGeometry height="44" width="160" x="770.4074938656194" y="1544.314326049495" as="geometry" />
+        </mxCell>
+        <mxCell id="ea_property_alerts_3" edge="1" parent="1" source="e_property_alerts" style="endArrow=none;html=1;rounded=0;strokeWidth=1.4;" target="a_property_alerts_3" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r_contains" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1;fontSize=11;" value="Contains" vertex="1">
+          <mxGeometry height="70" width="100" x="145" y="310" as="geometry" />
+        </mxCell>
+        <mxCell id="r_located" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1;fontSize=11;" value="Located In" vertex="1">
+          <mxGeometry height="75" width="110" x="384.53" y="455" as="geometry" />
+        </mxCell>
+        <mxCell id="r_groups" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1;fontSize=11;" value="Groups" vertex="1">
+          <mxGeometry height="70" width="100" x="465" y="274.24" as="geometry" />
+        </mxCell>
+        <mxCell id="r_classifies" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1;fontSize=11;" value="Classifies" vertex="1">
+          <mxGeometry height="70" width="110" x="913.04" y="300.24" as="geometry" />
+        </mxCell>
+        <mxCell id="r_status" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1;fontSize=11;" value="Has Status" vertex="1">
+          <mxGeometry height="70" width="110" x="1345" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="r_has_metering" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1;fontSize=11;" value="Has Metering" vertex="1">
+          <mxGeometry height="80" width="120" x="1357.69" y="507.5" as="geometry" />
+        </mxCell>
+        <mxCell id="r_energy_area" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1;fontSize=11;" value="Energy Area" vertex="1">
+          <mxGeometry height="70" width="110" x="1551.96" y="310" as="geometry" />
+        </mxCell>
+        <mxCell id="r_water_area" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1;fontSize=11;" value="Water Area" vertex="1">
+          <mxGeometry height="70" width="110" x="2007.91" y="310" as="geometry" />
+        </mxCell>
+        <mxCell id="r_has_energy_metrics" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1;fontSize=11;" value="Has Energy Metrics" vertex="1">
+          <mxGeometry height="85" width="130" x="1278.19" y="874.37" as="geometry" />
+        </mxCell>
+        <mxCell id="r_has_emission_metrics" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1;fontSize=11;" value="Has Emission Metrics" vertex="1">
+          <mxGeometry height="90" width="140" x="1108.19" y="1285" as="geometry" />
+        </mxCell>
+        <mxCell id="r_incurs" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1;fontSize=11;" value="Incurs" vertex="1">
+          <mxGeometry height="70" width="100" x="1080.62" y="1490" as="geometry" />
+        </mxCell>
+        <mxCell id="r_records_fuel" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1;fontSize=11;" value="Records Fuel Usage" vertex="1">
+          <mxGeometry height="85" width="135" x="519.53" y="1113.81" as="geometry" />
+        </mxCell>
+        <mxCell id="r_uses_fuel" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1;fontSize=11;" value="Uses Fuel Type" vertex="1">
+          <mxGeometry height="80" width="120" x="390" y="1330" as="geometry" />
+        </mxCell>
+        <mxCell id="r_has_alert" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1;fontSize=11;" value="Has Alert" vertex="1">
+          <mxGeometry height="75" width="110" x="466.64" y="1528.81" as="geometry" />
+        </mxCell>
+        <mxCell id="r_categorizes" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1;fontSize=11;" value="Categorizes" vertex="1">
+          <mxGeometry height="75" width="115" x="390" y="1830" as="geometry" />
+        </mxCell>
+        <mxCell id="c1" edge="1" parent="1" source="e_cities" style="endArrow=none;html=1;rounded=0;strokeWidth=1.4;" target="r_contains" value="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c2" edge="1" parent="1" source="e_boroughs" style="endArrow=none;html=1;rounded=0;strokeWidth=1.4;" target="r_contains" value="N">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c3" edge="1" parent="1" source="e_boroughs" style="endArrow=none;html=1;rounded=0;strokeWidth=1.4;" target="r_contains" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c4" edge="1" parent="1" source="e_boroughs" style="endArrow=none;html=1;rounded=0;strokeWidth=1.4;" target="r_located" value="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c5" edge="1" parent="1" source="e_properties" style="endArrow=none;html=1;rounded=0;strokeWidth=1.4;" target="r_located" value="N">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c6" edge="1" parent="1" source="e_properties" style="endArrow=none;html=1;rounded=0;strokeWidth=1.4;" target="r_located" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c7" edge="1" parent="1" source="e_parent_properties" style="endArrow=none;html=1;rounded=0;strokeWidth=1.4;" target="r_groups" value="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c8" edge="1" parent="1" source="e_properties" style="endArrow=none;html=1;rounded=0;strokeWidth=1.4;" target="r_groups" value="N">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c9" edge="1" parent="1" source="e_property_types" style="endArrow=none;html=1;rounded=0;strokeWidth=1.4;" target="r_classifies" value="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c10" edge="1" parent="1" source="e_properties" style="endArrow=none;html=1;rounded=0;strokeWidth=1.4;" target="r_classifies" value="N">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c11" edge="1" parent="1" source="e_properties" style="endArrow=none;html=1;rounded=0;strokeWidth=1.4;" target="r_classifies" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c12" edge="1" parent="1" source="e_construction_statuses" style="endArrow=none;html=1;rounded=0;strokeWidth=1.4;" target="r_status" value="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c13" edge="1" parent="1" source="e_properties" style="endArrow=none;html=1;rounded=0;strokeWidth=1.4;" target="r_status" value="N">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c14" edge="1" parent="1" source="e_properties" style="endArrow=none;html=1;rounded=0;strokeWidth=1.4;" target="r_status" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c15" edge="1" parent="1" source="e_properties" style="endArrow=none;html=1;rounded=0;strokeWidth=1.4;" target="r_has_metering" value="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c16" edge="1" parent="1" source="e_property_metering" style="endArrow=none;html=1;rounded=0;strokeWidth=1.4;" target="r_has_metering" value="N">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c17" edge="1" parent="1" source="e_property_metering" style="endArrow=none;html=1;rounded=0;strokeWidth=1.4;" target="r_has_metering" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c18" edge="1" parent="1" source="e_metering_areas" style="endArrow=none;html=1;rounded=0;strokeWidth=1.4;" target="r_energy_area" value="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c19" edge="1" parent="1" source="e_property_metering" style="endArrow=none;html=1;rounded=0;strokeWidth=1.4;" target="r_energy_area" value="N">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c20" edge="1" parent="1" source="e_property_metering" style="endArrow=none;html=1;rounded=0;strokeWidth=1.4;" target="r_energy_area" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c21" edge="1" parent="1" source="e_metering_areas" style="endArrow=none;html=1;rounded=0;strokeWidth=1.4;" target="r_water_area" value="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c22" edge="1" parent="1" source="e_property_metering" style="endArrow=none;html=1;rounded=0;strokeWidth=1.4;" target="r_water_area" value="N">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c23" edge="1" parent="1" source="e_property_metering" style="endArrow=none;html=1;rounded=0;strokeWidth=1.4;" target="r_water_area" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c24" edge="1" parent="1" source="e_properties" style="endArrow=none;html=1;rounded=0;strokeWidth=1.4;" target="r_has_energy_metrics" value="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c25" edge="1" parent="1" source="e_energy_metrics" style="endArrow=none;html=1;rounded=0;strokeWidth=1.4;" target="r_has_energy_metrics" value="N">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c26" edge="1" parent="1" source="e_energy_metrics" style="endArrow=none;html=1;rounded=0;strokeWidth=1.4;" target="r_has_energy_metrics" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c27" edge="1" parent="1" source="e_properties" style="endArrow=none;html=1;rounded=0;strokeWidth=1.4;" target="r_has_emission_metrics" value="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c28" edge="1" parent="1" source="e_emission_metrics" style="endArrow=none;html=1;rounded=0;strokeWidth=1.4;" target="r_has_emission_metrics" value="N">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c29" edge="1" parent="1" source="e_emission_metrics" style="endArrow=none;html=1;rounded=0;strokeWidth=1.4;" target="r_has_emission_metrics" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c30" edge="1" parent="1" source="e_properties" style="endArrow=none;html=1;rounded=0;strokeWidth=1.4;" target="r_incurs" value="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c31" edge="1" parent="1" source="e_ll97_penalties" style="endArrow=none;html=1;rounded=0;strokeWidth=1.4;" target="r_incurs" value="N">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c32" edge="1" parent="1" source="e_ll97_penalties" style="endArrow=none;html=1;rounded=0;strokeWidth=1.4;" target="r_incurs" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c33" edge="1" parent="1" source="e_properties" style="endArrow=none;html=1;rounded=0;strokeWidth=1.4;" target="r_records_fuel" value="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c34" edge="1" parent="1" source="e_property_fuel_usage" style="endArrow=none;html=1;rounded=0;strokeWidth=1.4;" target="r_records_fuel" value="N">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c35" edge="1" parent="1" source="e_property_fuel_usage" style="endArrow=none;html=1;rounded=0;strokeWidth=1.4;" target="r_records_fuel" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c36" edge="1" parent="1" source="e_fuel_types" style="endArrow=none;html=1;rounded=0;strokeWidth=1.4;" target="r_uses_fuel" value="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c37" edge="1" parent="1" source="e_property_fuel_usage" style="endArrow=none;html=1;rounded=0;strokeWidth=1.4;" target="r_uses_fuel" value="N">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c38" edge="1" parent="1" source="e_property_fuel_usage" style="endArrow=none;html=1;rounded=0;strokeWidth=1.4;" target="r_uses_fuel" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c39" edge="1" parent="1" source="e_properties" style="endArrow=none;html=1;rounded=0;strokeWidth=1.4;" target="r_has_alert" value="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c40" edge="1" parent="1" source="e_property_alerts" style="endArrow=none;html=1;rounded=0;strokeWidth=1.4;" target="r_has_alert" value="N">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c41" edge="1" parent="1" source="e_property_alerts" style="endArrow=none;html=1;rounded=0;strokeWidth=1.4;" target="r_has_alert" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c42" edge="1" parent="1" source="e_alert_types" style="endArrow=none;html=1;rounded=0;strokeWidth=1.4;" target="r_categorizes" value="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c43" edge="1" parent="1" source="e_property_alerts" style="endArrow=none;html=1;rounded=0;strokeWidth=1.4;" target="r_categorizes" value="N">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c44" edge="1" parent="1" source="e_property_alerts" style="endArrow=none;html=1;rounded=0;strokeWidth=1.4;" target="r_categorizes" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="X79caisAw7nNe7zkXO3_-2" edge="1" parent="1" source="e_boroughs" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.412;entryY=0.545;entryDx=0;entryDy=0;entryPerimeter=0;" target="e_boroughs">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="X79caisAw7nNe7zkXO3_-3" connectable="0" parent="X79caisAw7nNe7zkXO3_-2" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Text" vertex="1">
+          <mxGeometry relative="1" x="0.6816" y="8" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
