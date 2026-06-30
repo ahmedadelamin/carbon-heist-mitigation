@@ -3,6 +3,7 @@ import numpy as np
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.preprocessing import LabelEncoder
 from sklearn.model_selection import train_test_split
+from sklearn.metrics import r2_score, mean_absolute_error
 import joblib
 import os
 
@@ -16,16 +17,18 @@ CURRENT_LIMITS = {
     'Default': 0.00750
 }
 
-def get_data_driven_insights(year, score, emissions, gfa, prop_type, avg_emissions_data):
+def get_data_driven_insights(year, score, emissions, gfa, prop_type, type_avg_data, global_avg):
     """
     Diagnostic engine focusing on current peer comparison (Data-Driven).
+    Uses type-specific emissions per sqft for fair comparison.
     """
     diagnosis = []
     recommendations = []
     
-    # 1. Comparison with Peer Data (The "Power of Data")
-    avg_peer_emissions = avg_emissions_data * (gfa / 100000) # Scaling mean to building size
-    efficiency_gap = ((emissions - avg_peer_emissions) / avg_peer_emissions) * 100
+    # 1. Comparison with Peer Data (Type-Specific)
+    avg_per_sqft = type_avg_data.get(prop_type, global_avg)
+    avg_peer_emissions = avg_per_sqft * gfa
+    efficiency_gap = ((emissions - avg_peer_emissions) / avg_peer_emissions) * 100 if avg_peer_emissions > 0 else 0
     
     if efficiency_gap > 0:
         diagnosis.append(f"Performance Gap: This building emits {efficiency_gap:.1f}% MORE than its peers in the dataset.")
@@ -60,10 +63,13 @@ def train_current_model(file_name):
     target = 'Total GHG Emissions (Metric Tons CO2e)'
     features = ['Year Built', 'Property GFA - Calculated (Buildings and Parking) (ft²)', 'ENERGY STAR Score', 'Borough', 'Primary Property Type - Portfolio Manager-Calculated']
     
-    df_ml = df.dropna(subset=features + [target])
+    df_ml = df.dropna(subset=features + [target]).copy()
     
-    # Calculating global average emissions for benchmarking
-    global_avg_emissions = df_ml[target].mean()
+    # Calculating type-specific average emissions per sqft for fair peer comparison
+    gfa_col = 'Property GFA - Calculated (Buildings and Parking) (ft²)'
+    type_groups = df_ml.groupby('Primary Property Type - Portfolio Manager-Calculated')
+    type_avg_per_sqft = (type_groups[target].sum() / type_groups[gfa_col].sum()).to_dict()
+    global_avg_per_sqft = df_ml[target].sum() / df_ml[gfa_col].sum()
     
     le_bor = LabelEncoder()
     df_ml['Borough_Enc'] = le_bor.fit_transform(df_ml['Borough'].astype(str))
@@ -73,20 +79,30 @@ def train_current_model(file_name):
     X = df_ml[['Year Built', 'Property GFA - Calculated (Buildings and Parking) (ft²)', 'ENERGY STAR Score', 'Borough_Enc', 'Type_Enc']]
     y = df_ml[target]
     
-    model = RandomForestRegressor(n_estimators=100, max_depth=15, random_state=42)
-    model.fit(X, y)
+    # Train/Test Split for proper validation
+    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
     
-    joblib.dump(model, 'll97_model.joblib')
-    joblib.dump({'bor': le_bor, 'typ': le_typ, 'avg': global_avg_emissions}, 'll97_encoders.joblib')
+    model = RandomForestRegressor(n_estimators=150, max_depth=20, random_state=42)
+    model.fit(X_train, y_train)
     
-    return model, {'bor': le_bor, 'typ': le_typ, 'avg': global_avg_emissions}, X.columns
+    # Validation metrics
+    y_pred = model.predict(X_test)
+    r2 = r2_score(y_test, y_pred)
+    mae = mean_absolute_error(y_test, y_pred)
+    print(f"[+] Model Accuracy: R²={r2:.4f} ({r2*100:.1f}%), MAE={mae:.2f} MT CO2e")
+    
+    model_dir = os.path.dirname(os.path.abspath(__file__))
+    joblib.dump(model, os.path.join(model_dir, 'll97_model.joblib'))
+    joblib.dump({'bor': le_bor, 'typ': le_typ, 'type_avg': type_avg_per_sqft, 'global_avg': global_avg_per_sqft}, os.path.join(model_dir, 'll97_encoders.joblib'))
+    
+    return model, {'bor': le_bor, 'typ': le_typ, 'type_avg': type_avg_per_sqft, 'global_avg': global_avg_per_sqft}, X.columns
 
 def start_playground():
     print("\n" + "═"*80)
     print("   LL97 DATA-DRIVEN INSIGHTS ENGINE - CURRENT STATUS ONLY")
     print("═"*80)
     
-    file_name = '1234.xlsx - Clean.csv.xlsx'
+    file_name = os.path.join(os.path.dirname(os.path.abspath(__file__)), '1234.xlsx - Clean.csv.xlsx')
     if not os.path.exists(file_name):
         print(f"Error: Database '{file_name}' not found.")
         return
@@ -104,10 +120,18 @@ def start_playground():
             score = float(input("Energy Star Score (1-100): "))
             
             bor_name = input(f"Borough ({', '.join(encoders['bor'].classes_[:3])}...): ").strip()
-            bor_code = encoders['bor'].transform([bor_name])[0] if bor_name in encoders['bor'].classes_ else encoders['bor'].transform(['Manhattan'])[0]
+            if bor_name in encoders['bor'].classes_:
+                bor_code = encoders['bor'].transform([bor_name])[0]
+            else:
+                print(f"  ⚠️ Borough '{bor_name}' not found in training data. Defaulting to 'Manhattan'.")
+                bor_code = encoders['bor'].transform(['Manhattan'])[0]
 
             type_name = input("Property Type (e.g., Office): ").strip()
-            type_code = encoders['typ'].transform([type_name])[0] if type_name in encoders['typ'].classes_ else encoders['typ'].transform(['Office'])[0]
+            if type_name in encoders['typ'].classes_:
+                type_code = encoders['typ'].transform([type_name])[0]
+            else:
+                print(f"  ⚠️ Property type '{type_name}' not found in training data. Defaulting to 'Office'.")
+                type_code = encoders['typ'].transform(['Office'])[0]
 
             # 1. AI EMISSION PREDICTION
             test_df = pd.DataFrame([[year, gfa, score, bor_code, type_code]], columns=feature_cols)
@@ -118,7 +142,7 @@ def start_playground():
             liability_psf = (predicted_emissions * 268) / gfa
             
             # 3. DATA-DRIVEN INSIGHTS
-            diag, recs, gap = get_data_driven_insights(year, score, predicted_emissions, gfa, type_name, encoders['avg'])
+            diag, recs, gap = get_data_driven_insights(year, score, predicted_emissions, gfa, type_name, encoders['type_avg'], encoders['global_avg'])
 
             # 4. REPORT
             print("\n" + "╔" + "═"*70 + "╗")

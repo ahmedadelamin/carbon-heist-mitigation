@@ -6,6 +6,7 @@ from sklearn.metrics import mean_absolute_error, r2_score
 from sklearn.preprocessing import LabelEncoder
 import time
 import os
+import joblib
 
 def train_strategic_model():
     print("="*60)
@@ -13,7 +14,7 @@ def train_strategic_model():
     print("="*60)
     
     # 1. Load Data
-    file_name = '1234.xlsx - Clean.csv.xlsx'
+    file_name = os.path.join(os.path.dirname(os.path.abspath(__file__)), '1234.xlsx - Clean.csv.xlsx')
     print(f"[*] Step 1: Loading data from '{file_name}'...")
     
     if not os.path.exists(file_name):
@@ -47,7 +48,7 @@ def train_strategic_model():
     ]
     target = 'Total GHG Emissions (Metric Tons CO2e)'
     
-    df_ml = df.dropna(subset=features + [target])
+    df_ml = df.dropna(subset=features + [target]).copy()
 
     # 3. Categorical Encoding
     print("[*] Step 3: Encoding building categories...")
@@ -106,6 +107,12 @@ def train_strategic_model():
     print(f"[+] Predicted Emissions: {test_prediction:.2f} MT CO2e")
     print(f"[+] Projected Penalty:   ${penalty_psf:.2f} /sq ft")
     print("-" * 60)
+
+    # Save model and encoders
+    model_dir = os.path.dirname(os.path.abspath(__file__))
+    joblib.dump(model, os.path.join(model_dir, 'll97_model.joblib'))
+    joblib.dump({'bor': le_borough, 'typ': le_type}, os.path.join(model_dir, 'll97_encoders.joblib'))
+    print("[+] Model and encoders saved successfully!")
 
     return model
 
