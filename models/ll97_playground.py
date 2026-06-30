@@ -56,8 +56,8 @@ def train_current_model(file_name):
     df = pd.read_excel(file_name)
     
     # Cleaning based on current data distribution
-    df = df[df['Site EUI (kBtu/ft²)'] < 1500]
-    df = df[df['Property GFA - Calculated (Buildings and Parking) (ft²)'] > 25000]
+    df = df[df['Site EUI (kBtu/ft²)'] < 2000]
+    df = df[df['Property GFA - Calculated (Buildings and Parking) (ft²)'] > 0]
     df['ENERGY STAR Score'] = df['ENERGY STAR Score'].fillna(df['ENERGY STAR Score'].median())
     
     target = 'Total GHG Emissions (Metric Tons CO2e)'
