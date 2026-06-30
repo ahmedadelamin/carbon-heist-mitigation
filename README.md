@@ -92,8 +92,8 @@ flowchart TD
 
 ## 📂 Repository Structure
 
-```
-decarbonization-heist/
+```text
+carbon-heist-mitigation/
 │
 ├── 📁 models/
 │   ├── 🐍 train_ll97_model.py      # ML pipeline: preprocessing, feature engineering & training
@@ -101,12 +101,19 @@ decarbonization-heist/
 │
 ├── 📁 data/
 │   ├── 🐍 clean_data_pipeline.py   # Dataset wrangling, cleaning & null-value imputation
-│   └── 📊 sample_nyc_energy.xlsx    # Anonymized slice of 11,000+ NYC building energy records
+│   └── 📊 sample_nyc_energy.xlsx   # Anonymized slice of 11,000+ NYC building energy records
 │
-├── 📁 app/
-│   └── 🌐 sensitivity_dash.html    # Interactive Sensitivity Analysis dashboard (D3.js)
+├── 📁 application/
+│   ├── 🐍 app.py                   # Streamlit Dashboard Application
+│   └── 📊 results.csv              # Underlying analysis dataset
+│
+├── 📁 database/
+│   ├── 📜 carbon_heist_schema.sql  # SQL DDL script for database initialization & constraints
+│   ├── 📊 NYC_Energy_CO2_Tables_V2.xlsx # Data dictionary and mapping
+│   └── 🗺️ NYC_Energy_Chen_ERD.drawio # Entity-Relationship Diagram
 │
 ├── 📄 requirements.txt             # Python dependencies
+├── ⚖️ LICENSE                      # MIT License
 └── 📄 README.md                    # You are here
 ```
 
