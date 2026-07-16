@@ -100,6 +100,7 @@ flowchart TD
     D04 --> D05["📑 DOC 05: Testing & Quality Assurance\n• E2E Testing Verification Matrix\n• Automated Pipeline Assertions\n• Historical Bug Tracking Log"]:::doc
     D05 --> D06["📑 DOC 06: User Manual & Deployment\n• Local Setup Guide & Prerequisites\n• CLI & Streamlit Operations\n• Troubleshooting Reference"]:::doc
     D06 --> WORD["📥 MASTER DELIVERABLE: Official Word Report\n• Complete Illustrated DOCX Portfolio"]:::word
+    WORD --> PPT["📊 MASTER DELIVERABLE: Executive Presentation\n• 28-Slide C-Suite PowerPoint Deck (.pptx)"]:::word
 
     classDef doc fill:#161B22,stroke:#30363D,stroke-width:2px,color:#E6EDF3,font-size:13px
     classDef word fill:#0D1117,stroke:#00FF66,stroke-width:2px,color:#00FF66,font-size:14px
@@ -126,6 +127,7 @@ In addition to the 16-sheet Excel financial engineering model and live Streamlit
 | **05** | **Testing&nbsp;&&nbsp;Quality&nbsp;Assurance** | Full end-to-end verification test matrix (`TC-01` to `TC-09`), automated data pipeline hygiene assertions, and bug resolution log. | **🟢&nbsp;Verified** | [📖&nbsp;Open&nbsp;Doc&nbsp;05](./05_Testing_and_Quality_Assurance.md) |
 | **06** | **User&nbsp;Manual&nbsp;&&nbsp;Deployment** | Complete local setup instructions, Python package requirements, CLI playground execution, and Streamlit dashboard user manual. | **🟢&nbsp;Verified** | [📖&nbsp;Open&nbsp;Doc&nbsp;06](./06_User_Manual_and_Deployment.md) |
 | **DOCX** | **Official Word Documentation** | Fully formatted academic and technical documentation file ready for printing, submission, and executive presentation. | **🟢&nbsp;Verified** | [📥&nbsp;Download&nbsp;Word&nbsp;Doc](./Carbon_Heist_Mitigation_Documentation.docx) |
+| **PPTX** | **Official Executive Presentation** | 28-Slide C-Suite PowerPoint presentation deck outlining financial projections, treemaps, and engineering playbooks. | **🟢&nbsp;Verified** | [📊&nbsp;Download&nbsp;Presentation](./NYC_Carbon_Heist_Mitigation_Presentation.pptx) |
 
 ---
 

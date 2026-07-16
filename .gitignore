@@ -1,4 +1,5 @@
-*.pptx
+# *.pptx
+!Project Documentations/*.pptx
 __pycache__/
 *.pyc
 *.pyo

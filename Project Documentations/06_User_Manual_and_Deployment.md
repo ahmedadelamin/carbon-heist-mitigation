@@ -5,7 +5,8 @@
 
 [![Prev Document](https://img.shields.io/badge/Prev-Doc_05:_Testing_QA-181717?style=for-the-badge)](./05_Testing_and_Quality_Assurance.md)&nbsp;
 [![Back to Suite](https://img.shields.io/badge/Back_to-Docs_Suite-00FF66?style=for-the-badge&logo=github)](./README.md)&nbsp;
-[![Download Word Report](https://img.shields.io/badge/Download-DOCX_Master_Report-9B51E0?style=for-the-badge)](./Carbon_Heist_Mitigation_Documentation.docx)
+[![Download Word Report](https://img.shields.io/badge/Download-DOCX_Master_Report-9B51E0?style=for-the-badge)](./Carbon_Heist_Mitigation_Documentation.docx)&nbsp;
+[![Download Presentation](https://img.shields.io/badge/Download-PPTX_Presentation-FF6C37?style=for-the-badge&logo=microsoftpowerpoint&logoColor=white)](./NYC_Carbon_Heist_Mitigation_Presentation.pptx)
 <br/>
 [![Live Streamlit App](https://img.shields.io/badge/🌐%20LIVE_APP-LAUNCH_DASHBOARD-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)](https://carbon-heist-mitigation.streamlit.app/)&nbsp;
 [![AI Chatbot](https://img.shields.io/badge/AI%20Chatbot-Google%20Gemini%202.5%20Flash%20%2B%20Local-4285F4?style=for-the-badge&logo=google&logoColor=white)](https://carbon-heist-mitigation.streamlit.app/)
@@ -177,6 +178,7 @@ To initialize the relational schema in your SQL server:
 [![Return to Main Repo](https://img.shields.io/badge/🏠%20RETURN%20TO-MAIN%20REPOSITORY-00FF66?style=for-the-badge&logo=github&logoColor=black)](https://github.com/ahmedadelamin/carbon-heist-mitigation)&nbsp;
 [![Prev Document](https://img.shields.io/badge/PREV-DOC%2005:%20TESTING%20QA-181717?style=for-the-badge)](./05_Testing_and_Quality_Assurance.md)&nbsp;
 [![Docs Suite](https://img.shields.io/badge/📑%20BACK%20TO-DOCS%20SUITE-181717?style=for-the-badge)](./README.md)&nbsp;
-[![Download Word Report](https://img.shields.io/badge/DOWNLOAD-DOCX%20MASTER%20REPORT-9B51E0?style=for-the-badge)](./Carbon_Heist_Mitigation_Documentation.docx)
+[![Download Word Report](https://img.shields.io/badge/DOWNLOAD-DOCX%20MASTER%20REPORT-9B51E0?style=for-the-badge)](./Carbon_Heist_Mitigation_Documentation.docx)&nbsp;
+[![Download Presentation](https://img.shields.io/badge/DOWNLOAD-PPTX%20PRESENTATION-FF6C37?style=for-the-badge&logo=microsoftpowerpoint&logoColor=white)](./NYC_Carbon_Heist_Mitigation_Presentation.pptx)
 
 </div>

@@ -104,6 +104,7 @@ All academic and technical deliverables for the **Data Analysis & Engineering Tr
 | **05** | **Testing & Quality Assurance** | End-to-End Verification Matrix, Pipeline Assertions, Bug Tracking | 🟢 Complete | [📖 Doc 05](./Project%20Documentations/05_Testing_and_Quality_Assurance.md) |
 | **06** | **User Manual & Deployment** | Step-by-Step Installation Guide, CLI Operations, Troubleshooting | 🟢 Complete | [📖 Doc 06](./Project%20Documentations/06_User_Manual_and_Deployment.md) |
 | **DOCX** | **Official Word Documentation** | Comprehensive formatted academic report with executive KPI cards | 🟢 Complete | [📥 Word File](./Project%20Documentations/Carbon_Heist_Mitigation_Documentation.docx) |
+| **PPTX** | **Official Executive Presentation** | 28-Slide C-Suite PowerPoint Presentation deck with financial charts & regional treemaps | 🟢 Complete | [📊 Presentation Deck](./Project%20Documentations/NYC_Carbon_Heist_Mitigation_Presentation.pptx) |
 
 ---
 
@@ -140,7 +141,8 @@ carbon-heist-mitigation/
 │   ├── 📄 04_Implementation_and_Coding_Standards.md
 │   ├── 📄 05_Testing_and_Quality_Assurance.md
 │   ├── 📄 06_User_Manual_and_Deployment.md
-│   └── 📄 Carbon_Heist_Mitigation_Documentation.docx
+│   ├── 📄 Carbon_Heist_Mitigation_Documentation.docx
+│   └── 📊 NYC_Carbon_Heist_Mitigation_Presentation.pptx # 28-Slide C-Suite Executive Presentation
 │
 ├── 📁 PowerBI/                     # 3-Page Executive C-Suite BI & Visual Analytics Portal
 │   ├── 📄 README.md                # Comprehensive guide to DAX formulas & 3-page dashboards
