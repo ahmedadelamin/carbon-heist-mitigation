@@ -346,29 +346,29 @@ streamlit run app.py
     <th width="47%" align="left">Primary Responsibility & Domain</th>
   </tr>
   <tr>
-    <td>🧠&nbsp;<strong>Lead&nbsp;Data&nbsp;Scientist</strong></td>
+    <td>💹&nbsp;<strong>Lead&nbsp;Financial&nbsp;&&nbsp;Excel&nbsp;Strategist</strong></td>
     <td><strong>Ahmed&nbsp;Adel&nbsp;Amin</strong></td>
-    <td>ML Regression Pipeline · Feature Engineering · Automated ETL Wrangle</td>
+    <td>16-Sheet Financial & Engineering Model (`Co2 Project.xlsx`) · Statutory Fine Formulas · Decarbonization Playbook Waterfalls</td>
   </tr>
   <tr>
-    <td>⚙️&nbsp;<strong>MEP&nbsp;&&nbsp;Thermal&nbsp;Lead</strong></td>
+    <td>🧹&nbsp;<strong>Data&nbsp;Cleaning&nbsp;&&nbsp;Power&nbsp;BI&nbsp;Lead</strong></td>
     <td><strong>Ledia&nbsp;Sobhy</strong></td>
-    <td>WET System Thermodynamic Design · Heat Pump Modeling</td>
+    <td>Forensic ETL Cleaning Pipeline (`Clean_Data_Pipeline.py`) · Data Hygiene & Outlier Filtering · Power BI Executive Portal (`.pbix`)</td>
   </tr>
   <tr>
-    <td>📋&nbsp;<strong>Regulatory&nbsp;Specialist</strong></td>
-    <td><strong>Huda&nbsp;Amr</strong></td>
-    <td>NYC Local Law 97 Audit · Portfolio Compliance Strategy</td>
-  </tr>
-  <tr>
-    <td>💹&nbsp;<strong>Financial&nbsp;Strategist</strong></td>
+    <td>📊&nbsp;<strong>Visual&nbsp;BI&nbsp;&&nbsp;Tableau&nbsp;Specialist</strong></td>
     <td><strong>Hagar&nbsp;Hussein</strong></td>
-    <td>CAPEX Payback Modeling · Sensitivity Analysis · Cash Flow Cascade</td>
+    <td>Tableau Executive BI Portal (`.twbx`) · Spatial Choropleth Analytics across 5 Boroughs · Live Mobile QR Portal Integration</td>
   </tr>
   <tr>
-    <td>🔍&nbsp;<strong>Analytics&nbsp;Specialist</strong></td>
+    <td>🖥️&nbsp;<strong>Full-Stack&nbsp;App&nbsp;&&nbsp;ML&nbsp;Engineer</strong></td>
+    <td><strong>Huda&nbsp;Amr</strong></td>
+    <td>Interactive Streamlit Web Dashboard (`app.py`) · Random Forest ML Regressor (`R² = 81.65%`) · Dual-Engine AI Chatbot Integration</td>
+  </tr>
+  <tr>
+    <td>🗄️&nbsp;<strong>Relational&nbsp;Database&nbsp;Architect</strong></td>
     <td><strong>Abeer&nbsp;Adel</strong></td>
-    <td>Peer Benchmarking · KPI Visualizations · Reporting Suite</td>
+    <td>Normalized 3NF SQL Schemas (`MySQL` & `Microsoft SQL Server T-SQL`) · Entity-Relationship Diagrams (`ERD`) · Syntax & DDL Auditing</td>
   </tr>
 </table>
 
