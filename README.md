@@ -142,7 +142,9 @@ carbon-heist-mitigation/
 │   ├── 📄 05_Testing_and_Quality_Assurance.md
 │   ├── 📄 06_User_Manual_and_Deployment.md
 │   ├── 📄 Carbon_Heist_Mitigation_Documentation.docx
-│   └── 📊 NYC_Carbon_Heist_Mitigation_Presentation.pptx # 31-Slide C-Suite Executive Presentation
+│   ├── 📄 Carbon_Heist_Mitigation_Documentation.pdf  # Complete Illustrated Master Report (PDF)
+│   ├── 📊 NYC_Carbon_Heist_Mitigation_Presentation.pptx # 31-Slide C-Suite Executive Presentation
+│   └── 📊 NYC_Carbon_Heist_Mitigation_Presentation.pdf  # 31-Slide C-Suite Executive Presentation (PDF)
 │
 ├── 📁 PowerBI/                     # 3-Page Executive C-Suite BI & Visual Analytics Portal
 │   ├── 📄 README.md                # Comprehensive guide to DAX formulas & 3-page dashboards
